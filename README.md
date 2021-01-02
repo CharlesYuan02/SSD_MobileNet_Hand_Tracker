@@ -18,7 +18,7 @@ The EgoHands Dataset can be found here (though downloading it is not required):
 http://vision.soic.indiana.edu/projects/egohands/
 
 
-Harrison@pythonprogramming.net's tutorial on creating the required TFRecords files.
+Harrison @pythonprogramming.net's tutorial on creating the required TFRecords files.
 
 https://pythonprogramming.net/creating-tfrecord-files-tensorflow-object-detection-api-tutorial/
 
