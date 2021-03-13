@@ -15,8 +15,8 @@ sys.path.append("..")
 _score_thresh = 0.27
 
 # Change these to your directories
-PATH_TO_CKPT = "C:/Users/charl/OneDrive/Desktop/SSD_Handtracking/frozen_inference_graph_10k.pb"
-PATH_TO_LABELS = "C:/Users/charl/OneDrive/Desktop/SSD_Handtracking/hand_label_map.pbtxt"
+PATH_TO_CKPT = "frozen_inference_graphs/frozen_inference_graph_v2_22.5k.pb"
+PATH_TO_LABELS = "hand_label_map.pbtxt"
 
 NUM_CLASSES = 1  # We only want to detect hands
 
@@ -59,9 +59,9 @@ def draw_box_on_image(num_hands_detect, score_thresh, scores, boxes, im_width, i
             cY = int((top+bottom)/2)
 
             # Draw contour and center of the shape on the image
-            cv2.circle(image_np, (cX, cY), 10, (255, 255, 255), -1)
+            cv2.circle(image_np, (cX, cY), 10, (0, 0, 0), -1)
             cv2.putText(image_np, f"Center: ({cX}, {cY})", (cX - 20, cY - 20),
-                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+                        cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 2)
 
 
 # Display fps
