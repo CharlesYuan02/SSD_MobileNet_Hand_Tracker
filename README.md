@@ -9,6 +9,7 @@ A hand tracker created using OpenCV and an SSD MobileNet v2 re-trained via trans
 </p>
 
 This hand tracker was made as part of my work with the Gesture Detection Project Team at UTMIST. The goal was to utilize the EgoHands Dataset to perform transfer learning on the COCO SSD MobileNet v2, Tensorflow's built-in object detection API. 
+
 <img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/miscellaneous/ssd_pic.png">
 
 The EgoHands Dataset, curated by Indiana University, came with a set of labelled annotations that were used to generate TFRecords files, which were required to train the SSD MobileNet. The trained frozen inference graph was then utilized in conjunction with a multithreading approach implemented in OpenCV to detect when a hand was present in a user's webcam input, along with its location on the screen. In the future, this may be implemented to allow the user to interact with their computer's interface, performing actions such as clicking, dragging and dropping, and even playing simple games. The final model was trained on 22500 iterations.
