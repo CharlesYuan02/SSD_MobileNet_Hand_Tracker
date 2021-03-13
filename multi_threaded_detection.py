@@ -69,14 +69,14 @@ if __name__ == '__main__':
         '--width',
         dest='width',
         type=int,
-        default=800,
+        default=400,
         help='Width of the frames in the video stream.')
     parser.add_argument(
         '-ht',
         '--height',
         dest='height',
         type=int,
-        default=450,
+        default=225,
         help='Height of the frames in the video stream.')
     parser.add_argument(
         '-ds',
