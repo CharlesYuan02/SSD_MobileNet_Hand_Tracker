@@ -1,10 +1,12 @@
 # SSD_MobileNet_Hand_Tracker
-A hand tracker created using OpenCV and an SSD MobileNet v1 re-trained via transfer learning on the EgoHands Dataset.
+A hand tracker created using OpenCV and an SSD MobileNet v2 re-trained via transfer learning on the EgoHands Dataset.
 
-This hand tracker was made as part of my work with the Gesture Detection Project Team at UTMIST. The goal was to utilize the EgoHands Dataset to perform transfer learning on the COCO SSD MobileNet v1, Tensorflow's built-in object detection API. The EgoHands Dataset, curated by Indiana University, came with a set of labelled annotations that were used to generate TFRecords files, which were required to train the SSD MobileNet. The trained frozen inference graph was then utilized in conjunction with a multithreading approach implemented in OpenCV to detect when a hand was present in a user's webcam input, along with its location on the screen. In the future, this may be implemented to allow the user to interact with their computer's interface, performing actions such as clicking, dragging and dropping, and even playing simple games.
+![alt-text](https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_1.gif)
+![alt-text](https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_2.gif)
+![alt-text](https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_3.gif)
+![alt-text](https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_4.gif)
 
-The model itself was trained on 10 000, 15 000, and 25 000 iterations, with all three inference graphs provided. The 15k and 25k perform similarly in practice. Increasing the number of iterations increases the model's ability to differentiate between faces and hands.
-
+This hand tracker was made as part of my work with the Gesture Detection Project Team at UTMIST. The goal was to utilize the EgoHands Dataset to perform transfer learning on the COCO SSD MobileNet v2, Tensorflow's built-in object detection API. The EgoHands Dataset, curated by Indiana University, came with a set of labelled annotations that were used to generate TFRecords files, which were required to train the SSD MobileNet. The trained frozen inference graph was then utilized in conjunction with a multithreading approach implemented in OpenCV to detect when a hand was present in a user's webcam input, along with its location on the screen. In the future, this may be implemented to allow the user to interact with their computer's interface, performing actions such as clicking, dragging and dropping, and even playing simple games. The final model was trained on 22500 iterations.
 
 Code was modified based on the scripts created by Victor Dibia:
 
