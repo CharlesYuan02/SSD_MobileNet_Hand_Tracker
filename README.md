@@ -1,6 +1,7 @@
 # SSD_MobileNet_Hand_Tracker
 A hand tracker created using OpenCV and an SSD MobileNet v2 re-trained via transfer learning on the EgoHands Dataset.
 
+## Sample Results
 <p float="left">
 <img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_1.gif" height="230" width="413">
 <img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/gif_demos/hand_tracker_clip_2.gif" height="230" width="413">
@@ -10,12 +11,16 @@ A hand tracker created using OpenCV and an SSD MobileNet v2 re-trained via trans
 
 This hand tracker was made as part of my work with the Gesture Detection Project Team at UTMIST. The goal was to utilize the EgoHands Dataset to perform transfer learning on the COCO SSD MobileNet v2, Tensorflow's built-in object detection API. 
 
+## Model Image From SSD Paper
 <img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/miscellaneous/ssd_pic.png">
 
-The EgoHands Dataset, curated by Indiana University, came with a set of labelled annotations that were used to generate TFRecords files, which were required to train the SSD MobileNet. The trained frozen inference graph was then utilized in conjunction with a multithreading approach implemented in OpenCV to detect when a hand was present in a user's webcam input, along with its location on the screen. In the future, this may be implemented to allow the user to interact with their computer's interface, performing actions such as clicking, dragging and dropping, and even playing simple games. The final model was trained on 22500 iterations.
+The EgoHands Dataset, curated by Indiana University, came with a set of labelled annotations that were used to generate TFRecords files, which were required to train the SSD MobileNet. The trained frozen inference graph was then utilized in conjunction with a multithreading approach implemented in OpenCV to detect when a hand was present in a user's webcam input, along with its location on the screen. In the future, this may be implemented to allow the user to interact with their computer's interface, performing actions such as clicking, dragging and dropping, and even playing simple games. 
 
+## Training Results
+The final model was trained on 22500 iterations.
 <img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/miscellaneous/mAP_values.PNG">
 
+## Acknowledgements
 Code was modified based on the scripts created by Victor Dibia:
 
 https://medium.com/@victor.dibia/how-to-build-a-real-time-hand-detector-using-neural-networks-ssd-on-tensorflow-d6bac0e4b2ce
