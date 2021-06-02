@@ -52,3 +52,6 @@ https://arxiv.org/pdf/1512.02325.pdf
 
 
 Special thanks to Kathy Zhuang for being my partner in this project.
+
+## Certificate
+<img src="https://github.com/Chubbyman2/SSD_MobileNet_Hand_Tracker/blob/main/UTMIST%20Certificate.jpg">
